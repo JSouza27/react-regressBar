@@ -1,0 +1,46 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.timer {
+  align-items: center;
+  display: flex;
+  flex-direction: center;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.progress {
+  background-color: rgb(223, 220, 220);
+  height: 2em;
+  position: relative;
+  width: 20em;
+  box-sizing: border-box;
+}
+
+.bar {
+  background-color: #a8f9f3;
+  height: 100%;
+  position: absolute;
+  transition: width 500ms ease-out;
+}
+
+@keyframes progress-animation {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
